@@ -10,7 +10,18 @@
   <div class="container">
   <nav id='top-bar'> nav bar stuff is here </nav>
 <%= yield %>
-  <div id="foot-contact"> Social media contacts will be here </div>
+  <div id="foot-contact">
+    <div class="icons">
+      <%= link_to("", "https://twitter.com/heycampbell", class: "twitter") %>
+
+      <%= link_to("", "https://vimeo.com/heycampbell", class: "vimeo") %>
+      <a class="linkedin" href="https://www.linkedin.com/in/heycampbell"></a>
+      <a class="facebook" href="https://www.facebook.com/heycampbell"></a>
+      <a class="email" href="mailto:heycampbell@gmail.com"></a>
+      <a class="github" href="https://github.com/HeyCampbell"></a>
+      <a class="googleplus" href="https://plus.google.com/u/0/+JONCAMPBELLheycampbell/about"></a>
+    </div>
+   </div>
 </div>
 </body>
 </html>

@@ -2,13 +2,38 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  background: #F9F9F9
+}
+
+#face-img {
+  position: relative;
+}
+
+#face-img img{
+  height: 400px;
+}
+
+#logo {
+  display: inline;
+}
+
 div#intro {
-    margin-top: 100px;
-    width: 80%;
-    margin-left: 20%;
+  margin-top: 100px;
+  width: 80%;
+  margin-left: 20%;
 }
 
 div#foot-contact {
-    position: fixed;
-    bottom: 0px;
+  position: fixed;
+  bottom: 0px;
+}
+
+div#face-header {
+    display: inline-flex;
+    width: 100%;
+}
+
+span {
+    display: block;
 }
