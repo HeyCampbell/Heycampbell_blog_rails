@@ -16,6 +16,9 @@ body {
 
 #logo {
   display: inline;
+  margin-top: 1em;
+  justify-content: center;
+  font-family: monospace;
 }
 
 div#intro {
@@ -30,10 +33,61 @@ div#foot-contact {
 }
 
 div#face-header {
-    display: inline-flex;
-    width: 100%;
+  display: inline-flex;
+  width: 100%;
+  justify: right;
 }
 
-span {
-    display: block;
+
+.icons {
+  width: 500px;
+  margin: 0px;
+  float: right;
+}
+
+.icons a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 10px;
+  vertical-align: middle;
+  -o-transition: all .3s;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  -ms-transition: all .3s;
+}
+
+.icons a.twitter {
+  background: url(images/twitter.png)
+  left top no-repeat;
+}
+
+.icons a.vimeo {
+  background: url(./vimeo.png)
+  left top no-repeat;
+}
+
+.icons a.linkedin {
+  background: url(./linkedin.png)
+  left top no-repeat;
+}
+
+.icons a.facebook {
+background: url(./facebook.png)
+left top no-repeat;
+}
+.icons a.github {
+background: url(./github.png)
+left top no-repeat;
+}
+.icons a.googleplus {
+background: url(./googleplus.png)
+left top no-repeat;
+}
+.icons a.email {
+background: url(./email.png)
+left top no-repeat;
+}
+.icons a:hover {
+background-position: left -34px;
 }
