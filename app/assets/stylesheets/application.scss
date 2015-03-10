@@ -10,34 +10,39 @@ body {
   position: relative;
 }
 
-#face-img img{
-  height: 400px;
+#face-img img {
+  width: 100%;
 }
 
 #logo {
   display: inline;
-  margin-top: 1em;
+  margin-top: 15vw;
   justify-content: center;
   font-family: monospace;
+  font-size: 5vw;
 }
 
-div#intro {
+#logo span {
+  display: block;
+}
+
+#intro {
   margin-top: 100px;
   width: 80%;
-  margin-left: 20%;
+  margin: 4vw;
+  margin-left: 10vw;
 }
 
-div#foot-contact {
-  position: fixed;
+#foot-contact {
+
   bottom: 0px;
 }
 
-div#face-header {
+#face-header {
   display: inline-flex;
   width: 100%;
   justify: right;
 }
-
 
 .icons {
   width: 500px;
@@ -58,7 +63,7 @@ div#face-header {
 }
 
 .icons a.twitter {
-  background: url(images/twitter.png)
+  background: url(./twitter.png)
   left top no-repeat;
 }
 
@@ -73,21 +78,62 @@ div#face-header {
 }
 
 .icons a.facebook {
-background: url(./facebook.png)
-left top no-repeat;
+  background: url(./facebook.png)
+  left top no-repeat;
 }
 .icons a.github {
-background: url(./github.png)
-left top no-repeat;
+  background: url(./github.png)
+  left top no-repeat;
 }
 .icons a.googleplus {
-background: url(./googleplus.png)
-left top no-repeat;
+  background: url(./googleplus.png)
+  left top no-repeat;
 }
 .icons a.email {
-background: url(./email.png)
-left top no-repeat;
+  background: url(./email.png)
+  left top no-repeat;
 }
 .icons a:hover {
-background-position: left -34px;
+  background-position: left -34px;
+}
+
+.racing-stripe {
+  z-index: 1;
+  left: 20px;
+}
+#fat-stripe {
+  position: absolute;
+  width: 5vw;
+  height: 150%;
+  background-color: rgba(209, 0, 8, 0.57);
+  top: 0;
+  left: 3.5vw;
+}
+
+#thin-stripe {
+  position: absolute;
+  height: 150%;
+  top: 0px;
+  width: 1.5vw;
+  background-color: rgba(209, 0, 8, 0.57);
+  left: .5vw;
+}
+
+nav {
+  z-index: 2;
+}
+
+.navbar-inverse {
+  background-color: #D10008;
+  border-color: rgba(9, 9, 9, 0.28);
+}
+
+.navbar-brand {
+  padding: 5px 5px;
+  height: 50px;
+}
+
+.navbar-nav .active {
+  background: none;
+  font-size: 1.2em;
 }
