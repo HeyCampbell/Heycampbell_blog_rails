@@ -5,6 +5,7 @@ class CreateProjects < ActiveRecord::Migration
       t.text :body
       t.string :link
       t.string :img_url
+      t.string :thumbnail
 
       t.timestamps null: false
     end
