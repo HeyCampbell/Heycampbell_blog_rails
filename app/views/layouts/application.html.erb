@@ -8,60 +8,28 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span id='logo'><img src=<%= image_path("hcRoundLogo80.png")%>></span><span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Thoughts</a></li>
-            <li><ul class="dropdown-menu" role="menu">
-              <li class="divider"></li>
-              <li><a href="#">Github</a></li>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Email</a></li>
-
-            </ul></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<div class="container text-muted">
-  <div class='racing-stripe'>
-    <div id='fat-stripe'></div>
-    <div id='thin-stripe'></div>
+<div id='sidenav'>
+  <div class='menu-burger'>
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
   </div>
+
+  <ul class="side-menu">
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Thoughts</a></li>
+    <span>Contact</span>
+    <li><a href="https://github.com/HeyCampbell">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/heycampbell">LinkedIn</a></li>
+    <li><a href="https://twitter.com/heycampbell">Twitter</a></li>
+    <li><a href="mailto:heycampbell@gmail.com">Email</a></li>
+  </ul>
+
+</div>
+
 
 <%= yield %>
-  <div id="foot-contact">
-    <div class="icons">
-      <%= link_to("", "https://twitter.com/heycampbell", class: "twitter") %>
 
-      <%= link_to("", "https://vimeo.com/heycampbell", class: "vimeo") %>
-      <a class="linkedin" href="https://www.linkedin.com/in/heycampbell"></a>
-      <a class="facebook" href="https://www.facebook.com/heycampbell"></a>
-      <a class="email" href="mailto:heycampbell@gmail.com"></a>
-      <a class="github" href="https://github.com/HeyCampbell"></a>
-      <a class="googleplus" href="https://plus.google.com/u/0/+JONCAMPBELLheycampbell/about"></a>
-    </div>
-   </div>
-  </div>
 </body>
 </html>
