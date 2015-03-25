@@ -1,0 +1,161 @@
+/*
+ *= require redactor-rails
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$accent-color: #FF384D;
+$bg-color: #F9F9F9;
+$dark-bg: #464A57;
+$active-dark: #44474B;
+$active-accent: #FF2849;
+
+body {
+  background: white;
+}
+
+body h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: monospace ;
+  font-weight: 500;
+  line-height: 2;
+  color: #050505;
+}
+
+#logo {
+  background: url("monitor-black.jpg");
+  line-height: 2em;
+  color: limegreen;
+  position: relative;
+  /* left: 200px; */
+  padding-left: 200px;
+  padding-top: 20px;
+  padding-bottom: 200px;
+  font-size: 2em;
+  box-shadow: 23px 5px 24px rgba(48, 48, 48, 0.39);
+  span {
+    display: block;
+  }
+}
+
+#intro {
+  margin-top: 100px;
+  width: 80%;
+  margin-left: 150px;
+  padding-left: 20px;
+}
+
+#foot-contact {
+  display: none;
+  bottom: 0px;
+}
+
+#face-header {
+  display: inline-flex;
+  width: 100%;
+  justify: right;
+}
+
+
+.racing-stripe {
+  z-index: 1;
+  left: 20px;
+  position: absolute;
+  width: 5vw;
+  height: 150%;
+  background-color: $accent-color;
+  top: 0;
+  left: 3.5vw;
+}
+#fat-stripe {
+  position: absolute;
+  width: 5vw;
+  height: 150%;
+  background-color: $accent-color;
+  top: 0;
+  left: 3.5vw;
+}
+
+#thin-stripe {
+  position: absolute;
+  height: 150%;
+  top: 0px;
+  width: 1.5vw;
+  background-color: $accent-color;
+  left: .5vw;
+}
+
+#sidenav {
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  width: 150px;
+  background: black;
+  height: 100vh;
+  .menu-burger {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #f9f9f9;
+    border-radius: 10px;
+    margin: 15px;
+    .icon-bar{
+      display: block;
+      height: 10px;
+      margin: auto;
+      width: 20px;
+      border-bottom: 4px solid #f9f9f9;
+    }
+  }
+  ul, ul a {
+    list-style-type: none;
+    color: #f9f9f9;
+  }
+  ul span {
+    padding-top: 8px;
+    display: block;
+  }
+  li {
+    margin-top: 20px;
+  }
+  .navbar-inverse {
+    background: none;
+    border: none;
+    position: fixed;
+    .navbar-nav {
+      .dropdown-toggle {
+        height: 120px;
+        }
+      .active>a, .active>a:hover, .active>a:focus{
+        background: transparent;
+        font-size: 1.2em;
+        }
+      .open > a, .open>a:hover, .open > a:focus{
+        background: none;
+        height: 140px;
+        transition: 0.5s;
+        z-index: 2;
+      }
+    }
+  }
+  .navbar-brand {
+    padding: 5px 5px;
+    height: 50px;
+  }
+
+}
+
+.blink {
+  animation: blink 1s steps(5, start) infinite;
+  -webkit-animation: blink 2s steps(5, start) infinite;
+  display: inline;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
