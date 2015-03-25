@@ -1,0 +1,18 @@
+<%= form_for(@thought) do |f| %>
+  <% if @thought.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@thought.errors.count, "error") %> prohibited this thought from being saved:</h2>
+
+      <ul>
+      <% @thought.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= text_area_tag :editor, "", :id => "blog-entry", :class => "redactor", :rows => 40, :cols => 120 %>
+    <%= f.submit %>
+  </div>
+<% end %>

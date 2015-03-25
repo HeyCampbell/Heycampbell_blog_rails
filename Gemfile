@@ -28,6 +28,10 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'rails_12factor'
+gem 'redactor-rails'
+gem "carrierwave"
+gem "mini_magick"
+gem 'hirb'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
