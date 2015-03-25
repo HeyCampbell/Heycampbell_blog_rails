@@ -31,6 +31,7 @@ gem 'rails_12factor'
 gem 'redactor-rails'
 gem "carrierwave"
 gem "mini_magick"
+gem 'hirb'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
