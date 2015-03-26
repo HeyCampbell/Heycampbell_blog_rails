@@ -1,0 +1,21 @@
+<div>
+<%= form_for(:user, :url => new_user_registration_path) do |f|%>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </div>
+    <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Sign in" %>
+  </div>
+<%end%>
+</div>
+<p>Not Jon Campbell? Terribly sorry. You shouldn't login then.</p>

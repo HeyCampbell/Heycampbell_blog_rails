@@ -1,6 +1,6 @@
 class ThoughtsController < ApplicationController
   before_action :set_thought, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!, only: [:new, :edit, :create, :update, :destroy]
   # GET /thoughts
   # GET /thoughts.json
   def index

@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+  devise_for :users
   mount RedactorRails::Engine => '/redactor_rails'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
+  get 'signin' => 'welcome#signin'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -15,6 +17,11 @@ Rails.application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   resources :thoughts
   resources :projects
+  resources :sessions
+  devise_for :users, controllers: {
+        sessions: 'sessions'
+      }
+
 
 
 end
