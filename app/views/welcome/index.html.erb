@@ -1,7 +1,20 @@
-<div class='main_panel'>
+
   <div id="logo">
     <span>>hey("Campbell")</span>
     <span>>make Awesome<p class='blink'>_</p></span>
+  </div>
+  <div id='project-headline'>
+    <% if @projects %>
+      <% @projects.each do |proj| %>
+        <%= render "project_headline", locals: {:project => proj} %>
+      <% end %>
+    <% else %>
+      <div class='proj-thumb'> pic here
+      </div>
+      <div class='proj-desc'>Description here
+      </div>
+      <%end%>
+
   </div>
   <div id="intro">
     <h2>Hey Campbell</h2>
@@ -11,4 +24,3 @@
 
     <h4>Whatever field or capacity I am working in, I am a producer.</h4>
   </div>
-</div>
