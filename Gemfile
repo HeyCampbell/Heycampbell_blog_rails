@@ -32,6 +32,7 @@ gem 'redactor-rails'
 gem "carrierwave"
 gem "mini_magick"
 gem 'hirb'
+gem 'font-awesome-sass'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<div id='sidenav'>
+<div class='sidenav'>
   <div class='menu-burger'>
     <span class="sr-only">Toggle navigation</span>
     <span class="icon-bar"></span>
@@ -17,13 +17,20 @@
   </div>
 
   <ul class="side-menu">
-    <li><a href="#">Projects</a></li>
-    <li><a href="#">Thoughts</a></li>
+    <li><a href="#">Projects</a><i class="fa fa-wrench"></i></li>
+    <li><a href="#">Thoughts</a><i class="fa fa-wrench"></i></li>
     <span>Contact</span>
-    <li><a href="https://github.com/HeyCampbell">Github</a></li>
-    <li><a href="https://www.linkedin.com/in/heycampbell">LinkedIn</a></li>
-    <li><a href="https://twitter.com/heycampbell">Twitter</a></li>
-    <li><a href="mailto:heycampbell@gmail.com">Email</a></li>
+    <li><a href="https://github.com/HeyCampbell">Github</a><i class="fa fa-github-square"></i></li>
+    <li><a href="https://www.linkedin.com/in/heycampbell">LinkedIn</a><i class="fa fa-linkedin-square"></i></li>
+    <li><a href="https://twitter.com/heycampbell">Twitter</a><i class="fa fa-twitter-square"></i></li>
+    <li><a href="mailto:heycampbell@gmail.com">Email</a><i class="fa fa-envelope-square"></i></li>
+    <% if current_user %>
+
+    <span>Admin</span>
+    <li><%=link_to "New Thought", new_thought_path %><i class="fa fa-wrench"></i></li>
+    <li><%=link_to "New Project", new_project_path %><i class="fa fa-wrench"></i></li>
+    <li><%=link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
+    <% end %>
   </ul>
 
 </div>
