@@ -16,6 +16,11 @@
       <%end%>
 
   </div>
+  <div class='thought-teasers'>
+    <% @thoughts.each do |t| %>
+      <%= render :partial => 'thoughts/headline', locals: {thought: t} %>
+    <% end %>
+  </div>
   <div id="intro">
     <h3>Jon Campbell</h3>
     <h3>Developer. Producer. Breather.</h3>
