@@ -1,6 +1,7 @@
 ---
 title: test post
 thumbnail: http://ak1.polyvoreimg.com/cgi/img-set/cid/10080875/id/COcXoOdo3hG-s7m2BjyNdw/size/l.jpg
+date: 11/03/2015
 ---
 
 ## I'm jon Campbell
