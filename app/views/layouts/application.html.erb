@@ -17,8 +17,8 @@
   </div>
 
   <ul class="side-menu">
-    <li><a href="#">Projects</a><i class="fa fa-wrench"></i></li>
-    <li><a href="#">Thoughts</a><i class="fa fa-wrench"></i></li>
+    <li><%= link_to "Home", root_path%><i class="fa fa-home"></i></li>
+    <li><%= link_to "Thoughts", thoughts_path%><i class="fa fa-wrench"></i></li>
 
     <li><a href="https://github.com/HeyCampbell">Github</a><i class="fa fa-github-square"></i></li>
     <li><a href="https://www.linkedin.com/in/heycampbell">LinkedIn</a><i class="fa fa-linkedin-square"></i></li>
@@ -39,5 +39,8 @@
 
 <%= yield %>
 </div>
+<div class='foot-stuff'>
+  <h5>available_for_work? = New York  |  San Francisco  |  Remote</h5>
+  <h5>Copyright Jon Campbell - 2015</h5>
 </body>
 </html>
