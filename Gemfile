@@ -34,6 +34,9 @@ gem "mini_magick"
 gem 'hirb'
 gem 'font-awesome-sass'
 gem 'metadown'
+gem 'awesome_print', :require => 'ap'
+
+gem 'irbtools', require: 'irbtools/binding'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
