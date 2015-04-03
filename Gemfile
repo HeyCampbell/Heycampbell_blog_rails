@@ -27,13 +27,16 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.3'
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 gem 'redactor-rails'
 gem "carrierwave"
 gem "mini_magick"
 gem 'hirb'
 gem 'font-awesome-sass'
 gem 'metadown'
+gem 'awesome_print', :require => 'ap'
+
+gem 'irbtools', require: 'irbtools/binding'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

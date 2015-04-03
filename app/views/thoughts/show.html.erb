@@ -1,4 +1,15 @@
 <p id="notice"><%= notice %></p>
-<%= @thought.title %>
-<%= link_to 'Edit', edit_thought_path(@thought) %> |
+<div class="logo ">
+  <span>><%= @thought.title %></span>
+  <span class='byline'>>By: Jon Danger Campbell<p class='blink'>_</p></span>
+</div>
+<div class='blog-body'>
+  <%= @thought.body.html_safe %>
+</div>
+<% if Thought.count - 1 > @thought.id %>
+  <%= link_to 'Next', thought_path(id: @thought.id + 1)  %>  |
+<% end%>
+
+  <%= link_to 'Edit', edit_thought_path(@thought) %> |
+
 <%= link_to 'Back', thoughts_path %>
