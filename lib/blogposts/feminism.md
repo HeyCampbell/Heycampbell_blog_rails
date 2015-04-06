@@ -1,7 +1,7 @@
 ---
 title: It's not about feminism,It's about humanism
 date: 02/11/14
-
+thumbnail: https://houseofgeekery.files.wordpress.com/2015/02/nogirlsallowed.jpg
 ---
 
   Perhaps you've been living under a rock. Perhaps you just haven't been paying attention to the Nerdosphere. But there is some serious shit going on right now that we need to take a look at. People are calling it [Gamergate](http://en.wikipedia.org/wiki/Gamergate_controversy) this time. It involves a female game developer who, after her ex boyfriend blogged about a possible journalistic conflict of interest concerning her romantic involvement with then partner, began to recieve ongoing harrassment, including threats of violence and outright death threats.
