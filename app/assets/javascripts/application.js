@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery_turbolinks
 //= require_tree .
 //= require redactor-rails
 //= require bootstrap-sprockets

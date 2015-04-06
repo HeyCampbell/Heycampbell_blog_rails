@@ -1,6 +1,7 @@
 ---
 title: Run out of town on Rails
 date: 29/11/2014
+thumbnail: http://www.gilesbowkett.com/images/dhh_so_be_happy.jpg
 ---
 #How Rails changed the Web
 
