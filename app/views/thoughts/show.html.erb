@@ -9,7 +9,8 @@
 <% if Thought.count - 1 > @thought.id %>
   <%= link_to 'Next', thought_path(id: @thought.id + 1)  %>  |
 <% end%>
-
-  <%= link_to 'Edit', edit_thought_path(@thought) %> |
-
+<% if current_user %>
+  <%= link_to 'Edit', edit_thought_path(@thought) %>
+  <% end %>
+  <%= social_share_button_tag(@thought.title, :popup => "true") %>|
 <%= link_to 'Back', thoughts_path %>

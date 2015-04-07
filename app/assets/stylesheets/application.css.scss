@@ -1,11 +1,13 @@
 /*
  *= require redactor-rails
  *= require_self
+ *= require social-share-button
  */
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,700);
 
 $accent-color: #FF384D;
 $bg-color: #F9F9F9;
@@ -22,7 +24,7 @@ body {
 }
 
 body h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: monospace ;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 500;
   line-height: 2;
   color: $softgrey;
@@ -230,14 +232,23 @@ body h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .thought-headline{
   background-repeat: no-repeat;
   background-size: cover;
-  height: 150px;
-  width: 100vw;
-  position: relative;
-  left: -150px;
-  box-shadow: inset 0 -12px 100px 10px rgba(0, 0, 0, 0.4);
-
-    a {
+  color: $active-dark;
+  border-bottom: 1px solid $active-dark;
+  /* height: 150px; */
+  width: 80%;
+/*  position: relative;*/
+  /* left: -150px; */
+  /*box-shadow: inset 0 66px 100px 10px rgba(0, 0, 0, 0.6);*/
+  .right-headline{
+    display: inline-block;
+    .title{
+      font-size: 2em;
       color: $active-dark;
+    }
+    .date{
+    }
+  }
+    a {
       text-decoration: none !important;
       border-bottom: none !important;
       transition: 0.2s;
@@ -251,14 +262,11 @@ body h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     }
 
   img {
-    height: 60px;
-  }
-
-  .title{
-    padding: 0 200px;
-    text-align: right;
-    font-size: 2em;
-    color: $muteWhite;
+    border-radius: 100%;
+    border-spacing: 2px;
+    margin: 20px;
+    margin-left: 100px;
+    border: 2px solid $active-dark;
   }
 }
 

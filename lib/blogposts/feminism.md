@@ -1,6 +1,6 @@
 ---
 title: It's not about feminism,It's about humanism
-date: 02/11/14
+date: 02/11/2014
 thumbnail: https://houseofgeekery.files.wordpress.com/2015/02/nogirlsallowed.jpg
 ---
 

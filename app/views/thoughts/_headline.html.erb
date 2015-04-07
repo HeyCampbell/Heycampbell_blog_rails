@@ -1,6 +1,10 @@
-<div class='thought-headline' style="background-image: url(<%=thought.thumbnail %>)">
-  <%= link_to content_tag(:span, thought.title.html_safe, :class => 'title'), thought_path(id: thought.id) %>
-  <%= %>
+<%=content_tag :div, :class => 'thought-headline' do -%>
+  <%= link_to(thought) do %>
+    <%= image_tag(thought.thumbnail, size: "100x100") %>
+    <%=content_tag :div, :class => 'right-headline' do -%>
+      <%= content_tag(:div, thought.title.html_safe, :class => 'title') %>
+      <%= content_tag(:div, "Posted " + time_ago_in_words(thought.created_at) + " ago", :class => 'date') %>
+    <% end %>
+  <% end %>
+<% end %>
 
-
-</div>
