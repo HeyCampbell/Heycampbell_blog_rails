@@ -12,5 +12,5 @@
 <% if current_user %>
   <%= link_to 'Edit', edit_thought_path(@thought) %>
   <% end %>
-  |
+  <%= social_share_button_tag(@thought.title, :popup => "true") %>|
 <%= link_to 'Back', thoughts_path %>

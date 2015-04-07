@@ -1,6 +1,7 @@
 /*
  *= require redactor-rails
  *= require_self
+ *= require social-share-button
  */
 @import "font-awesome-sprockets";
 @import "font-awesome";
@@ -232,6 +233,7 @@ body h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   background-repeat: no-repeat;
   background-size: cover;
   color: $active-dark;
+  border-bottom: 1px solid $active-dark;
   /* height: 150px; */
   width: 80%;
 /*  position: relative;*/
