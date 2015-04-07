@@ -2,7 +2,7 @@ class WelcomeController < ApplicationController
 
   def index
     @projects = Project.all
-    @thoughts = Thought.take(5)
+    @thoughts = Thought.order(created_at: :desc).limit(5)
   end
 
   def signin
