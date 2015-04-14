@@ -12,7 +12,7 @@ class Thought < ActiveRecord::Base
 
       @thought.update(thought)
 
-      @thought.created_at = thought[:date]
+      @thought.created_at = thought[:date] || Date.new
     end
   end
 
