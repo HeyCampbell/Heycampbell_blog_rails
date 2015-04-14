@@ -9,10 +9,8 @@ class Thought < ActiveRecord::Base
     blog_files.each do |blog|
       thought = Thought.parse_md(blog)
       @thought = Thought.find_or_create_by(title: thought[:title])
-
       @thought.update(thought)
-
-      @thought.created_at = thought[:date] || Date.new
+      @thought.save
     end
   end
 
@@ -22,6 +20,6 @@ class Thought < ActiveRecord::Base
 
   def self.parse_md(filename)
     data = Metadown.render(File.open(filename, 'rb').read)
-    {title: data.metadata["title"], thumbnail: data.metadata["thumbnail"], created_at: data.metadata["date"], body: data.output}
+    {title: data.metadata["title"], thumbnail: data.metadata["thumbnail"], body: data.output}
   end
 end
