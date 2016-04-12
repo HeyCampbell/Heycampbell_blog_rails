@@ -1,6 +1,7 @@
 ---
 title: It's not about feminism,It's about humanism
-date: 02/11/2014
+tagline: Everybody deserves a seat at the table
+date: 11/02/2015
 thumbnail: https://houseofgeekery.files.wordpress.com/2015/02/nogirlsallowed.jpg
 ---
 

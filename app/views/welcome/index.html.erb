@@ -1,19 +1,23 @@
 
-<div class="logo">
-  <span>>hey("Campbell")</span>
-  <span>>make Awesome<p class='blink'>_</p></span>
+<div class="logo col-xs-12">
+  <div>>hey("Campbell")</div>
+  <div>>make Awesome<p class='blink'>_</p></div>
 </div>
 
-<div id="intro">
-  <h2>Jon Danger Campbell</h2>
-  <h2>Developer. Producer. Breather.</h2>
-  <h2>I am a Full Stack producer with over 12 years of experience. Now I'm doing the most creative work of my life as a code monkey.</h2>
 
-</div>
-<div class='thought-teasers'>
+
+<div class='thought-teasers col-sm-3'>
   <% @thoughts.each do |t| %>
     <%= render :partial => 'thoughts/headline', locals: {thought: t} %>
   <% end %>
+</div>
+
+
+<div id="intro" class=" col-sm-9">
+  <h2>I am Jon Danger Campbell</h2>
+  <h2>Developer. Producer. Breather.</h2>
+  <h2>I make awesome</h2>
+
 </div>
 
 

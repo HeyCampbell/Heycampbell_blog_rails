@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 <div class="logo ">
   <span>><%= @thought.title %></span>
-  <span class='byline'>>By: Jon Danger Campbell<p class='blink'>_</p></span>
+  <span class='byline'><a href="/">>By: Jon Danger Campbell<p class='blink'>_</p></a></span>
 </div>
 <div class='blog-body'>
   <%= @thought.body.html_safe %>
@@ -12,5 +12,4 @@
 <% if current_user %>
   <%= link_to 'Edit', edit_thought_path(@thought) %>
   <% end %>
-  <%= social_share_button_tag(@thought.title, :popup => "true") %>|
-<%= link_to 'Back', thoughts_path %>
+<%= link_to 'Back', thoughts_path, { :class=>"col-sm-3" }%>

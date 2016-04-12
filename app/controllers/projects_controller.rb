@@ -12,6 +12,10 @@ class ProjectsController < ApplicationController
   def show
   end
 
+  def show_by_name
+    @project = Project.find(params[:name])
+  end
+
   # GET /projects/new
   def new
     @project = Project.new

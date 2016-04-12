@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 20150325182332) do
 
   create_table "thoughts", force: :cascade do |t|
     t.string   "title"
+    t.string   "tagline"
     t.text     "body"
     t.string   "thumbnail"
     t.datetime "created_at", null: false

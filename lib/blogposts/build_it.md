@@ -1,6 +1,7 @@
 ---
 title: One Screw at a time
-date: 03/4/2015
+date: 03/04/2015
+tagline: A brief allegory on the teaching style of Dev Bootcamp
 thumbnail: http://www.ncad.com/images/top-banner-machining.jpg
 ---
 

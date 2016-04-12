@@ -1,7 +1,6 @@
 /*
  *= require redactor-rails
  *= require_self
- *= require social-share-button
  */
 @import "font-awesome-sprockets";
 @import "font-awesome";
@@ -15,8 +14,6 @@ body {
   background: $muteWhite;
 }
 
-
-
 #notice {
   margin:0;
 }
@@ -24,16 +21,13 @@ body {
 .logo {
   font-family: monospace;
   background: $dark-bg;
-  line-height: 2em;
   color: limegreen;
   position: relative;
-  left: -100px;
-  padding-left: 200px;
+  // padding-left: 200px;
   padding-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   font-size: 2em;
   box-shadow: 23px 5px 24px rgba(48, 48, 48, 0.39);
-  width: 100vw;
 
   span {
     display: block;
@@ -42,9 +36,7 @@ body {
 
 #intro {
   margin-top: 10px;
-  width: 80%;
   // padding-left: 20px;
-  margin: auto;
   font-weight: 600;
 }
 
@@ -65,7 +57,7 @@ body {
 .sidenav {
   z-index: 2;
   position: fixed;
-  left: 0;
+  right: 0;
   width: 50px;
   background: none;
   height: 60px;
@@ -128,7 +120,7 @@ body {
 }
 
 .expand{
-  left: 0;
+  right: 0;
   width: 150px;
   height: 100vh;
   background: $dark-bg;
@@ -189,16 +181,11 @@ body {
 }
 
 .main_panel {
-  padding-left: 100px;
+  // padding-left: 100px;
 
 
   .thought-teasers{
-    margin: 60px 0;
     background-color: $softgrey;
-    position: relative;
-    padding-left: 100px;
-    left: -100px;
-    width: 100vw;
     }
 
   .blog-body {
@@ -282,5 +269,18 @@ body {
 @-webkit-keyframes blink {
   to {
     visibility: hidden;
+  }
+}
+
+.social-share-button-facebook {
+  display: inline-block;
+  // width: 16px;
+  // height: 16px;
+  background: url("facebook.png") no-repeat;
+}
+
+.byline{
+  a{
+    color: limegreen;
   }
 }

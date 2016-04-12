@@ -20,6 +20,6 @@ class Thought < ActiveRecord::Base
 
   def self.parse_md(filename)
     data = Metadown.render(File.open(filename, 'rb').read)
-    {title: data.metadata["title"], thumbnail: data.metadata["thumbnail"], body: data.output}
+    {title: data.metadata["title"], thumbnail: data.metadata["thumbnail"], tagline: data.metadata["tagline"], body: data.output}
   end
 end

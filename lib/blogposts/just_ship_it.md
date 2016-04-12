@@ -1,5 +1,7 @@
 ---
 title: Don't think it. Ship it.
+tagline: Seriously. Just ship it already
+date: 02/11/2015
 thumbnail: http://glasshousedf.com/wp-content/uploads/2012/12/Shut-Up-and-Ship-It.psd_.jpg
 ---
 #So you've written some code.#
